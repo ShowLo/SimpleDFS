@@ -20,3 +20,29 @@ A simple distributed file system (DFS)
 
 &emsp;同时，各``slave``之间有一个向其他``slave``请求文件传输的功能。当一个``slave``需要某个分块，可以向``master``请求拥有此分块的``slave``地址，``master``根据分块文件名在本机找到存有此分块文件的随机一个``slave``，得到返回的``slave``地址后向其请求文件的传输，同时应该在``master``的记录表中将
 当前``slave``增加到此分块的``slave``信息中去。
+
+### 示例
+
+上传文件：
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="DFSsave.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+
+下载文件：
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="DFSload.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">下载文件</div>
+</center>
