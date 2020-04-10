@@ -44,5 +44,5 @@ A simple distributed file system (DFS)
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">下载文件</div>
+    padding: 2px;"></div>
 </center>
